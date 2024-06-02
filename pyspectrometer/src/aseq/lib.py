@@ -35,7 +35,7 @@ class DeviceInfoIterator:
 if system() == "Windows":
     from os import add_dll_directory, getcwd
     add_dll_directory(getcwd())
-    libspectr = CDLL("libspectrometer.dll")
+    libspectr = CDLL("spectrometer.dll")
 else:
     libspectr = CDLL("libspectrometer.so")
 
